@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link type='text/css' rel='stylesheet' href='assets/main.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body ng-app="myApp">
+
+    <div class='container-fluid'>
+
+        <div class='navi-disp'>
+            <ul class="nav nav-tabs pull-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/poll">Poll</a></li>
+                <li><a href="/new">Create</a></li>
+            </ul>
+        </div>
+        
+        <div class='jumbotron centered'>
+            <h1>Voting App</h1>
+        </div>
+        <br />
+
+        <div ng-view></div>
+
+    </div>
+    
+    
+    <script src='app/app.js'></script>
+    <script src='app/service.js'></script>
+    <script src='assets/ajax.js'></script>
+    <script src='app/components/home/homeController.js'></script>
+    <script src='app/components/poll/pollController.js'></script>
+    <script src='app/components/new/newController.js'></script>
+</body>
+
+</html>

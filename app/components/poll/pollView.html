@@ -1,0 +1,39 @@
+<div class='row'>
+    <div class='col-xs-5'>
+        <div class='poll-disp'>
+            <h3>Poll - {{poll.topic}}</h3>
+            <h4>Question: {{poll.question}}</h4>
+            <div ng-repeat='answer in poll.answers'>
+                <div class='vote-block'>
+                    <p class='disp-inline'>{{answer.choice}} : {{answer.count}}</p>
+                    <button class='disp-inline' ng-click='modify($index)'>Vote</button>
+                    <!--Inside the ng-click, no need to use {{}} symbol for data binding-->
+                </div>
+            </div>
+            <br />
+            <p>Click on the vote icon above to cast your vote</p>
+            <br />
+            <div class='addAnswer'>
+                <form action="{{'/api/addAnswer/' + poll.topic }}" method='post'>
+                    or add your own preference: <input type="text" name='newAnswer' class="form-control" placeholder="new answer" required>
+                    <br />
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i>Submit</button>
+                </form>
+            </div>
+            
+            <!--<div class='select-box'>-->
+            <!--    <h3>Vote for your preference below</h3>-->
+            <!--    <br />-->
+            <!--    <select ng-model="voteAnswer">-->
+            <!--        <option ng-repeat='answer in poll.answers'>{{answer.choice}}</option>-->
+            <!--    </select>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+    <!--Div that will hold the pie chart-->
+    <div class='col-xs-6'>
+        <div id="chart_div"></div>
+    </div>
+
+</div>

@@ -1,0 +1,15 @@
+<div class='banner'>
+    <h3>Main page</h3>
+    <p>Click on a poll below to vote.</p>
+    <div class='row'>
+        <div ng-repeat='x in results'>
+            <div class='col-xs-6'>
+                <a class='disp-inline' href='/poll/{{x.polls.topic}}'>
+                    <button class='display'>{{x.polls.topic}}</button>
+                </a>
+                <button class='disp-inline' ng-click='removePoll(x.polls.topic, $index)'>X</button>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>

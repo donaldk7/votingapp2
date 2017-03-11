@@ -1,0 +1,52 @@
+body {
+  background-color: lightgray;
+}
+
+.navi-disp {
+  width: 90%;
+  height: 50px;
+  background-color: #ccc;
+  margin: auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.jumbotron {
+  background-image:url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSg72r3fwD_LxMeODfRfKfTq4eZA9GUwU1T0IlazZCoJmUasnXU');
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -20px;
+}
+
+.banner {
+    text-align: center;
+}
+
+h1 {
+    margin-top: -20px;
+}
+
+.display {
+  width: 350px;
+  height: 100px;
+  font-size: medium;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.disp-inline {
+  display: inline;
+}
+
+.poll-disp {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.select-box {
+  margin-top: 50px;
+}
+

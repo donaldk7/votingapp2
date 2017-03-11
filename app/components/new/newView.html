@@ -1,0 +1,15 @@
+<div class='banner'>
+    <h3>Create a new poll</h3>
+</div>
+
+    <div class='question-container'>
+        <form action='/api/createpoll' method='post'>
+            Topic: <input type="text" name='newtopic' ng-model="newtopic" class="form-control" placeholder="topic" required>
+            <br></br>
+            Question: <input type="text" name='newquestion' ng-model='newquestion' class="form-control" placeholder="question" required>
+            <br></br>
+            Answers: <textarea rows='7' cols='200' name='newanswers' ng-model='newanswers' class="form-control" placeholder="separated by line" required></textarea>
+            <br></br>
+            <button type="submit" class="btn btn-primary findpoll"><i class="fa fa-paper-plane"></i>Submit</button>
+        </form>
+    </div>
